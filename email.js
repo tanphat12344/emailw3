@@ -19,8 +19,9 @@ const imgpen = document.querySelector(".header-body .imgpen");
 
 message.addEventListener("click", () =>{
     form_message.classList.toggle("showmess");
-    overlay.classList.toggle("show");
+    // overlay.classList.toggle("show");
 });
+
 
 inbox.addEventListener("click", () =>{
     contentinbox.classList.toggle("showinbox");
@@ -29,12 +30,12 @@ console.log(inbox);
 
 btnX.addEventListener("click", () =>{
     form_message.classList.toggle("showmess");
-    overlay.classList.toggle("show");
+    // overlay.classList.toggle("show");
 });
 
 btncancel.addEventListener("click", () =>{
     form_message.classList.toggle("showmess");
-    overlay.classList.toggle("show");
+    // overlay.classList.toggle("show");
 });
 
 
@@ -54,14 +55,21 @@ inboxsumary.forEach((item, index) =>{
     })
 })
 
-// imgbars.addEventListener("click", () => {
-//     navbarleft.classList.add("show-nav");
-//     overlay.classList.toggle("show");
-// })
+imgbars.addEventListener("click", () => {
+
+    navbarleft.classList.add("show-nav");
+    overlay.classList.toggle("show");
+
+});
 
 imgpen.addEventListener("click", () =>{
     form_message.classList.toggle("showmess");
-    overlay.classList.toggle("show");
+    // overlay.classList.toggle("show");
+});
+
+overlay.addEventListener("click", () =>{
+    overlay.classList.remove("show");
+    navbarleft.classList.remove("show-nav");
 });
 
 

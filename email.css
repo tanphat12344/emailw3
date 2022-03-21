@@ -110,6 +110,7 @@ hr{
     left: 0;
     display:flex;
     display: none;
+    background-color: rgba(0,0,0,0.4)
 }
 .form-message.showmess{
     display: flex;
@@ -209,18 +210,20 @@ hr{
 }
 
 @media (max-width: 900px){
-.navbar-left{
-    animation: animateleftout 0.4s linear; 
-    /* display: none; */
-}
-@keyframes animateleftout{from{left:0; opacity: 1} to {left: -320px; opacity: 0}};
 
+
+.navbar-left{
+    transition: all 0.4s ease-in;
+    transform: translateX(-100%);
+}
 
 .navbar-left.show-nav{
-    animation: animatelefton 0.4s linear ;
-    /* display: block; */
+    transition: all 0.4s ease-in;
+    transform: translateX(0);
+    z-index: 2;
+
+
 }
-@keyframes animatelefton{from{left:-320px; opacity: 0} to {left: 0; opacity: 1}}
 
 .body-main{
     margin-left:0px;
@@ -238,7 +241,6 @@ hr{
     background-color: red;
     color: white;   
     cursor: pointer;
-    /* font-size: 30px; */
 }
 .header-body .imgpen:hover{
     background-color:#87ceea;
@@ -247,6 +249,9 @@ hr{
 }
 .header-body .imgbars{
     cursor: pointer;
+}
+.overlay{
+    z-index: 1;
 }
 
 
