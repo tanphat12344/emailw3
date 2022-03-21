@@ -5,7 +5,7 @@
     width: 320px;
     height: 100%;
     max-height: 100%;
-    background-color: antiquewhite;
+    background-color: white;
     overflow: scroll;
     z-index: 1;
 
@@ -25,11 +25,17 @@
 }
 
 .message a{
-    background-color: #616161;
+    background-color:black;
     color: white;
     padding-top: 20px;
+    opacity: 0.6;
     
 }
+.message:hover{
+    background-color:black;
+    color: white;
+    opacity: 1;
+} 
 .message i{
     margin-left: 20px;
 }
@@ -37,6 +43,11 @@
 .navbar-left i{
     margin-left: 5px;
     margin-right: 10px;
+}
+
+.navhover:hover{
+    background-color: #ccc;
+    
 }
 
 .content-inbox{
@@ -51,14 +62,19 @@
 
 
 .inbox-sumary{
-    padding-left: 20px;
+    padding: 10px;
     cursor: pointer;
 }
 .inbox-sumary.inboxactive{
-    background-color: aquamarine;
+    background-color: #ccc;
 }
 .inbox-sumary img{
      width: 15%;
+}
+.inbox-view.inboxcolor{
+    background-color: red;
+    color: white;
+    opacity: 0.8;
 }
 
 .inbo{
@@ -79,7 +95,7 @@ hr{
     opacity: 0.2;
     border: 0;
     border-top: 1px solid black;
-    margin:30px 0;
+    margin: 0;
     box-sizing: content-box;
     /* color: white; */
   }

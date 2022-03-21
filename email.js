@@ -17,6 +17,8 @@ const navbarleft = document.querySelector(".navbar-left");
 
 const imgpen = document.querySelector(".header-body .imgpen");
 
+// const inboxview = document.querySelector(".inbox-view");
+
 message.addEventListener("click", () =>{
     form_message.classList.toggle("showmess");
     // overlay.classList.toggle("show");
@@ -25,6 +27,7 @@ message.addEventListener("click", () =>{
 
 inbox.addEventListener("click", () =>{
     contentinbox.classList.toggle("showinbox");
+    inbox.classList.toggle("inboxcolor");
 });
 console.log(inbox);
 
@@ -54,6 +57,8 @@ inboxsumary.forEach((item, index) =>{
         this.classList.add("inboxactive");
     })
 })
+
+
 
 imgbars.addEventListener("click", () => {
 
