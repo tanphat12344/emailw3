@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+
+    <link rel="stylesheet" href="./email.css">
+
+</head>
+
+<body>
+    <div class="form-message">
+        <div class="content-message">
+            <div class="header-mess">
+                <h1>Send Mail</h1>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+    
+            <div class="form-content">
+                <label for="">To</label>
+                <input type="text"> <br>
+                <label for="">From</label>
+                <input type="text"><br>
+                <label for="">Subject</label>
+                <input type="text" > <br>
+                <input type="text" class="mess-input" placeholder="What's on your mind?">
+    
+                <div class="footer-form">
+                    <button class="btncancel">
+                        Cancel
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                    <button class="btnsend">
+                        Send
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </div>
+    
+            </div>
+    
+        </div>
+
+    </div>
+
+    
+    <div class="navbar-left">
+
+        <div class="imgw3">
+            <img src="https://www.w3schools.com/images/w3schools.png" alt="">
+        </div>
+
+        <div class="message">
+            <a href="javascript:void(0)">
+                New Message
+                <i class="fa-solid fa-pencil"></i>
+            </a>
+            <section id="overlay"></section> 
+        </div>
+        
+        <div class="inbox">
+            <a href="javascript:void(0)" class="inbox-view">
+                <i class="fa-solid fa-inbox"></i>
+                Inbox(3)
+                <i class="fa-solid fa-caret-down"></i>
+            </a>
+          
+            <div class="content-inbox">
+                <div class="inbox-sumary inboxactive">
+                    <div class="inbo">
+                        <img src="https://www.w3schools.com/w3images/avatar3.png" alt="">
+                        <span>Borge Refsnes</span>
+                    </div>
+                    <p>Subject: Remember Me</p>
+                    <p>Hello, i just wanted to let you know that i'll be home at...</p>
+                </div>
+                <hr>
+
+                <div class="inbox-sumary">
+                    <div class="inbo">
+                        <img src="https://www.w3schools.com/w3images/avatar5.png" alt="">
+                        <span>Jane Doe</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                </div>
+                <hr>
+
+                <div class="inbox-sumary">
+                    <div class="inbo">
+                        <img src="https://www.w3schools.com/w3images/avatar2.png" alt="">
+                        <span>John Doe</span>
+                    </div>
+                    <p>Welcome!</p>
+                </div>
+                <hr>
+            </div>
+        </div>
+
+        <!-- Sent -->
+        <a href="">
+            <i class="fa-solid fa-paper-plane"></i>
+            Sent
+        </a> <br>
+        <!-- drafts -->
+        <a href="">
+            <i class="fa-solid fa-hourglass-end"></i>
+            Drafts
+        </a><br>
+        <!-- trash -->
+        <a href="">
+            <i class="fa-solid fa-trash-can"></i>
+            Trash
+        </a><br>
+    
+    </div>
+    
+    <div class="body-main">
+        <div class="header-body">
+                <i class="fa-solid fa-bars imgbars"></i>
+            
+                <i class="fa-solid fa-pencil imgpen"></i>
+        </div>
+        <div class="info-main showinfo">
+
+            <div>
+                <img src="https://www.w3schools.com/w3images/avatar3.png" alt="">
+            </div>
+            <p>Subject: Remember Me</p>
+            <h2><i class="fa-solid fa-clock"></i>From Borge Refsnes, Sep 27, 2015.</h2>
+            <div>
+                <button>
+                    Reply
+                    <i class="fa-solid fa-reply"></i>                
+                </button>
+                <button>
+                    Forward
+                    <i class="fa-solid fa-right-long"></i>                
+                </button>
+            </div>
+            <hr>
+            <div class="content-info">
+                <p>Hello, i just wanted to let you know that i'll be home at lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Best Regards,</p>
+                <p>Borge Refsnes</p>
+            </div>
+        </div>
+
+        <div class="info-main">
+            <div>
+                <img src="https://www.w3schools.com/w3images/avatar5.png" alt="">
+            </div>
+            <p>Subject: None</p>
+            <h2><i class="fa-solid fa-clock"></i>From Jane Doe, Sep 25, 2015.</h2>
+            <div>
+                <button>
+                    Reply
+                    <i class="fa-solid fa-reply"></i>                
+                </button>
+                <button>
+                    Forward
+                    <i class="fa-solid fa-right-long"></i>                
+                </button>
+            </div>
+            <hr>
+            <div class="content-info">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Forever yours,</p>
+                <p>Jane</p>
+            </div>
+        </div>
+
+        <div class="info-main">
+            <div>
+                <img src="https://www.w3schools.com/w3images/avatar2.png" alt="">
+            </div>
+            <p>Subject: None</p>
+            <h2><i class="fa-solid fa-clock"></i></i>From John Doe, Sep 23, 2015.
+            </h2>
+            <div>
+                <button>
+                    Reply
+                    <i class="fa-solid fa-reply"></i>                
+                </button>
+                <button>
+                    Forward
+                    <i class="fa-solid fa-right-long"></i>                
+                </button>
+            </div>
+            <hr>
+            <div class="content-info">
+                <p>Welcome.</p>
+                <p>That's it!</p>
+            </div>
+        </div>
+    </div>
+
+<script src="./email.js"></script>    
+</body>
+</html>
