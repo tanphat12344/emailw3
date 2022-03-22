@@ -45,8 +45,9 @@
     margin-right: 10px;
 }
 
-.navhover:hover{
+.navbar-left .navhover:hover{
     background-color: #ccc;
+    color: black;
     
 }
 
